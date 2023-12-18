@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  body{
+    background-image:url(https://th.bing.com/th/id/R.c14815bad6c15296b5a3af3034528cd8?rik=kushr%2bVF4sV0Eg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-dVsWLxl1ayA%2fUEC86_Z8iQI%2fAAAAAAAAI5Y%2fYKCJFT-D14A%2fs1600%2fAbstract%2bMusic%2bWallpapers%2b5.jpg&ehk=faU5DaHY83uY25S6ghDc1yesRVBdWAvJDAbuprdOzds%3d&risl=&pid=ImgRaw&r=0);
+   background-size: cover;  
+}
+  
+  #piano {
+    background:radial-gradient(closest-corner circle at 20% 20%,
+    #445,
+    #445 20%,
+    #445 21%,
+    #223 100%);
+    width: 992px;
+    height: 290px;
+    margin: 80px auto;
+    padding: 90px 20px 0 20px;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .keys {
+    background-color: #040404;
+    width: 949px;
+    height: 180px;
+    padding-left: 2px;
+    overflow: hidden;
+  }
+  
+  .key {
+    background-color: #ffffff;
+    position: relative;
+    width: 41px;
+    height: 175px;
+    margin: 2px;
+    float: left;
+    border-radius: 0 0 3px 3px;
+  }
+  
+  .key.black--key::after {
+    background-color: #1d1e22;
+    content: "";
+    position: absolute;
+    left: -18px;
+    width: 32px;
+    height: 100px;
+    border-radius: 0 0 3px 3px;
+  }
+  
+
+  
+  @media (max-width: 768px) {
+    #piano {
+      width: 358px;
+    }
+  
+    .keys {
+      width: 318px;
+    }
+  
+    .logo {
+      width: 150px;
+    }
+  }
+  @media (max-width: 1199px) and (min-width: 769px) {
+    #piano{
+      width:675px;
+    }
+    .keys{
+      width:633px;
+    }
+    }
+    .key:hover{
+        background-color:#ccc;
+    }
+    .black--keys:hover{
+        background-color:#333;
+    }
